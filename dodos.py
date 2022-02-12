@@ -31,7 +31,6 @@ os.system("clear")
 os.system("xdg-open https://youtube.com/channel/UC2mLQ18pngyrc7Rs3ElnpQw")
 print("\033[1;32m√ \033[1;37mDon't Abuse \033[1;36m>_<")
 import random, requests
-from dhooks import Webhook
 
 codes = random.randint(0,999) #Proses Code Random
 ip1 = request.get("https://api.ipify.org/").text #Tracker IP VPS
